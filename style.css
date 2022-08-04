@@ -1,0 +1,18 @@
+body,html{
+    background: #a6c1ee;
+    background: webkit-linear-gradient(to right, #fbc2eb 0%, #a6c1ee 100%);
+    background: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 100%);
+}
+
+.navbar-nav{
+    width: 100%;
+    justify-content: end;
+}
+
+.navbar{
+    border-style: none;
+    box-shadow: 4px 3px 8px 1px #c3c2c2;
+    padding-left: 1%;
+    background-color: rgba(255, 255, 255,0.6);
+    backdrop-filter: blur(10px) saturate(100%) contrast(45%) brightness(130%);
+}
