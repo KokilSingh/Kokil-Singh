@@ -1,7 +1,7 @@
 body,html{
-    background: #a6c1ee;
-    background: webkit-linear-gradient(to right, #fbc2eb 0%, #a6c1ee 100%);
-    background: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 100%);
+    background: #24C6DC;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #514A9D, #24C6DC);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #514A9D, #24C6DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .navbar-nav{
@@ -10,9 +10,71 @@ body,html{
 }
 
 .navbar{
+    width: 100%;
+    position:fixed;
+    margin: 0;
     border-style: none;
-    box-shadow: 4px 3px 8px 1px #c3c2c2;
-    padding-left: 1%;
-    background-color: rgba(255, 255, 255,0.6);
+    padding: 0 0 0 1%;
+   }
+
+.navbar-brand{
+    width: fit-content;
+}
+
+@media (max-width: 765px) {
+    main{
+        padding-top: 4rem !important;
+    }
+}
+
+/*
+box-shadow: 4px 3px 8px 1px #717171;
+ background-color: rgba(255, 255, 255,0.8);
     backdrop-filter: blur(10px) saturate(100%) contrast(45%) brightness(130%);
+*/
+
+
+.navbar-brand:hover{
+    color:#24C6DC;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5%;
+}
+
+#content{
+    padding: 2.5%;
+    min-width: 80vw;
+}
+
+/* -----------------Image Area------------------*/
+
+#Image_block{
+    padding: 2.5%;
+    background-color: #7e7ea156;
+    border-radius: 2.5em 2.5em 0 0;
+}
+/*#a7a5a556*/
+#image-box{
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+
+#profile-pic{
+    width:150%;
+    box-shadow: 4px 3px 8px 1px #a7a5a5;
+    border-style: solid;
+    border-color: aliceblue;
+    border-width: 1rem;
+    border-radius: 100%;
+}
+
+#connect-box{
+    padding: 5%;
+    text-align: center;    
 }
