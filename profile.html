@@ -26,10 +26,28 @@
               <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                   <li class="nav-item mx-1">
-                    <a id="userlink" class="nav-link active normal" aria-current="page" href="#">About Me</a>
+                    <a id="abt" class="nav-link active normal" aria-current="page" href="#about-me">About Me</a>
                   </li>
                   <li class="nav-item mx-1">
-                    <a id="signoutlink" class="nav-link active normal " aria-current="page" href="#">My Experience</a>
+                    <a id="educate" class="nav-link active normal " aria-current="page" href="#education">Education</a>
+                  </li>
+                  <li class="nav-item mx-1">
+                    <a id="exp" class="nav-link active normal " aria-current="page" href="#jobs">Experience</a>
+                  </li>
+                  <li class="nav-item mx-1">
+                    <a id="pro" class="nav-link active normal " aria-current="page" href="#projects">Projects</a>
+                  </li>
+                  <li class="nav-item mx-1">
+                    <a id="awd" class="nav-link active normal " aria-current="page" href="#Awards">Awards</a>
+                  </li>
+                  <li class="nav-item mx-1">
+                    <a id="pub" class="nav-link active normal " aria-current="page" href="#">Publications</a>
+                  </li>
+                  <li class="nav-item mx-1">
+                    <a id="skl" class="nav-link active normal " aria-current="page" href="#">Skills</a>
+                  </li>
+                  <li class="nav-item mx-1">
+                    <a id="call" class="nav-link active normal " aria-current="page" href="#">Contact</a>
                   </li>
                 </ul>
               </div>
@@ -79,7 +97,7 @@
                   </div>
                   -->
                   <div class="row">
-                    <div class="col col-3">My Email :</div>
+                    <div class="col col-4">My Email :</div>
                     <div class="col col-8" id="email-copy" onclick="copyEmail()" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Copy to Clipboard">kokildeepti@gmail.com</div>
                   </div>
                 </div>
@@ -128,15 +146,73 @@
               <div id="Experience" class="row">
                 <div id="jobs" class="col col-12 col-lg-6 col-md-6">
                   <h1>Experience</h1>
+                  <div class="timeline">
+                    <div class="row job">
+                      <a href="https://www.ceeri.res.in/" target="_blank" class="col col-3 col-lg-3 col-md-3">
+                        <img src="/csir-ceeri pilani.png" alt="CEERI Pilani" class="images" >
+                      </a>
+                      <div class="col col-12 col-lg-9 col-md-9 description">
+                        <p class="qualification">Summer Research Intern</p>
+                        <p class="place"> CSIR - CEERI Pilani</p>
+                        <p class="extra"> Working under Senior Scientist, Dr. Satyam Srivastava</p>
+                        <p class="duration">May 2022 - Present </p>
+                      </div>
+                    </div>
+                    <div class="row job">
+                      <a href="https://www.ewb-bphc.com/" target="_blank" class="col col-3 col-lg-3 col-md-3">
+                        <img src="/EWB_BPHC_Logo.webp" alt="EWB" class="images" >
+                      </a>
+                      <div class="col col-12 col-lg-9 col-md-9 description">
+                        <p class="qualification">Member, Tech Team</p>
+                        <p class="place"> Engineers Without Borders</p>
+                        <p class="extra"> BPHC Chapter</p>
+                        <p class="duration">May 2022 - Present </p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 <div id="projects" class="col col-12 col-lg-6 col-md-6">
                   <h1>Projects</h1>
+                  <div class="row timeline" id="completed">
+                    <div class="row project_done">
+                      <p class="project_n">A Study on the Epigenetics of Brain Cancer</p>
+                      <p class="super">Supervisor: Dr. Vivek Sharma, Assistant Professor, Department of Biological Sciences, BITS Pilani - Hyderabad Campus</p>
+                    </div>
+                  </div>
+                  <div class="row timeline" id="ongoing">
+                    <h4><div class="spinner-grow text-success" role="status" id="spin_1"></div> Ongoing</h4>
+                    <div class="row project_on">
+                      <p class="super">Supervisor: Dr. Satyam Srivastava, Senior Srivastava, CSIR-CEERI Pilani</p>
+                      <p>Research Area: Cervical Cancer, Internet of Things</p>
+                      <p>Work Involves: Machine Learning, Web Development, Android App Development</p>
+                    </div>
+                    <div class="row project_on">
+                      <p class="super">Supervisors: 
+                        
+                          Dr. K.N. Mohan, Associate Professor, Department of Biological Sciences, BITS Pilani - Hyderabad Campus &
+                          Dr. Lov Kumar, Assistant Professor, Department of Computer Science and Information Systems, BITS Pilani - Hyderabad Campus
+                        
+                      </p>
+                      <p>Research Area: Complex Disorder, Biomedical Engineering</p>
+                      <p>Work Involves: Data Science</p>
+                    </div>
+                  </div>
                 </div>
               </div>
 
               <div id="Awards" class="row">
                 <div id="award-list">
                   <h1>Awards</h1>
+                  <div class="row award">
+                    <h5>BITS Pilani Merit Scholarship</h5>
+                    <p>(Aug 2021 - Present)</p>
+                    <p>Awarded to the top 1% students of the University</p>
+                  </div>
+                  <div class="row award">
+                    <h5>Lala Kailashpath Singhania Merit Scholarship</h5>
+                    <p>(Jan 2020)</p>
+                    <p>Awarded to the student with the most outstanding academic performance and an exemplary record in extra-curricular activities </p>
+                  </div>
                 </div>
               </div>
 
