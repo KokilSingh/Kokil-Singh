@@ -15,6 +15,7 @@ body,html{
     margin: 0;
     border-style: none;
     padding: 0 0 0 1%;
+    z-index: 1;
    }
 
 .navbar-brand{
@@ -23,7 +24,11 @@ body,html{
 
 @media (max-width: 765px) {
     main{
-        padding-top: 4rem !important;
+        padding-top: 5.5rem !important;
+    }
+
+    #content{
+        max-width: 80vw ;
     }
 }
 
@@ -47,7 +52,7 @@ main{
 
 #content{
     padding: 2.5%;
-    min-width: 80vw;
+    width: 80vw;
 }
 
 /* -----------------Image Area------------------*/
@@ -75,6 +80,97 @@ main{
 }
 
 #connect-box{
-    padding: 5%;
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;    
+}
+
+#connect{
+    padding: 3%;
+    border-radius: 1rem;
+    color: #285fc4;
+    background-color: rgba(240, 248, 255, 0.762);
+}
+
+#break-line{
+    z-index:0;
+}
+
+/* -----------------ABOUT ME AND EDUCATION------------------*/
+
+#About_Edu{
+    padding: 2.5%;
+    background-color: aliceblue;
+}
+
+#about-me,#education{
+    padding: 5%;   
+}
+
+.timeline{
+    padding-top: 1rem;
+}
+
+/*--------------ABOUT ME -----------*/
+
+/*------------------------- EDUCATION ---------------------*/
+
+.edu{
+    border-left-style: solid;
+    border-left-color: #285fc4;
+    padding: 1rem 0 1rem 0;
+}
+
+.edu::before{
+    content: '';
+    position: absolute;
+    width: 1rem;
+    border-top: 1rem solid #24C6DC;
+}
+
+.images{
+    height: 5rem;
+    border-radius: 100%;
+}
+
+.description{
+    padding-left: 0.5rem;
+}
+
+.description >p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.description > p:nth-child(1){
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.description >p:nth-child(4){
+    color: #87a1a4;
+}
+
+/*--------------------------------EXPERIENCE-------------------------------------*/
+
+#Experience{
+    padding: 2.5%;
+    background-color: aliceblue;
+}
+
+#jobs,#projects{
+    padding: 5%;
+}
+
+/*---------------------------------AWARDS----------------------------------------*/
+
+#Awards{
+    padding: 2.5%;
+    background-color: #7e7ea156;
+}
+
+#award-list{
+    padding: 5%;
 }
