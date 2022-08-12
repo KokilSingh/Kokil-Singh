@@ -9,6 +9,12 @@ body,html{
     justify-content: end;
 }
 
+
+.navbar-nav >li a:hover{
+    border-bottom-style: solid;
+    border-bottom-color: #24C6DC;
+}
+
 .navbar{
     width: 100%;
     position:fixed;
@@ -19,7 +25,8 @@ body,html{
    }
 
 .navbar-brand{
-    width: fit-content;
+    width: -moz-fit-content;
+    width:fit-content;
 }
 
 @media (max-width: 765px) {
@@ -42,6 +49,9 @@ box-shadow: 4px 3px 8px 1px #717171;
 .navbar-brand:hover{
     color:#24C6DC;
 }
+
+
+
 
 main{
     display: flex;
@@ -181,7 +191,7 @@ main{
     margin-top: 1rem;
 }
 
-#spin_1{
+#spin_1,#spin_2{
     height: 1.5rem;
     width: 1.5rem;
     animation-duration: 1.25s;
@@ -195,20 +205,38 @@ main{
     font-weight: 700;
     color: #285f;
 }
-/*---------------------------------AWARDS----------------------------------------*/
+/*---------------------------------AWARDS & PUBLICATIONS & CONTACT----------------------------------------*/
 
-#Awards{
+#Awards,#Publications,#Contact{
     padding: 2.5%;
     background-color: #7e7ea156;
 }
 
-#award-list{
+#award-list,#pub-list,#contact-list{
     padding: 5%;
     border-radius: 1rem;
     background-color: rgba(240, 248, 255, 0.762);
 }
 
-.award{
+#contact-list{
+    color: #24C6DC;
+    background-color: black;
+    text-align: center;
+}
+
+.contact{
+    color: #24C6DC;
+}
+
+#Email{
+    background-color: black;
+}
+
+#Email:hover{
+    color: aquamarine;
+}
+
+.award,.pub{
     padding: 1rem;
     margin-bottom: 1rem;
     border-radius: 1rem;
@@ -222,4 +250,50 @@ main{
 .award>p:nth-child(2){
     color: #87a1a4;
     font-size: 0.9rem;   
+}
+
+/*---------------------------SKILLS---------------------------*/
+
+#Skills{
+    padding: 7%;
+    background-color: aliceblue;
+}
+
+
+.language{
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: rgba(254, 254, 254, 0.762);
+    text-align: center;
+    margin-top: 0.75rem;
+}
+
+
+.lang{
+    padding-bottom: 1rem;
+}
+
+.logo{
+    height: 8rem;
+    margin-bottom: 0.5rem;  
+}
+
+.learn{
+    font-size: 0.8rem;
+    color: #87a1a4;
+}
+
+/*-------------------------Move up Button-----------------------------*/
+
+#Move{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 1.5rem;
+    padding-right: 2rem;
+}
+
+.bi-arrow-up-square-fill{
+    color:rgb(65, 65, 210);
+    font-size: 3.5rem;
 }

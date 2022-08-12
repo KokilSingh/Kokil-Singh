@@ -17,19 +17,22 @@ screen.addListener(navbarClass); // Attach listener
 
 /*------------------ CHANGE NAVBAR TYPE WHEN SCROLLING--------------------*/
 
-// Yet to be checked....
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
     let navbar =document.getElementById('logo');
     navbar.style.transition ="0.4s";
-    
+    let goUpBtn =document.getElementById('Move');
+
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
     navbar.setAttribute('width','50rem');
+    goUpBtn.toggleAttribute('hidden',false);
   } else {
     navbar.setAttribute('width','75rem');    
+    goUpBtn.toggleAttribute('hidden',true);
+    }
 }
-}
+
 
 /*----------------------------------- TOOLTIP -------------------------------------- */
 
@@ -40,8 +43,8 @@ const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstra
 
 original_email ='kokildeepti@gmail.com'
 
-function copyEmail(){
-    let email =document.getElementById('email-copy');
+function copyEmail(email_id){
+    let email =document.getElementById(email_id);
     navigator.clipboard.writeText(original_email);
     email.innerHTML="<p style='color: green'> Copied to clipboard</p>";
     setTimeout(function(){
