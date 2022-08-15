@@ -20,3 +20,5 @@ As this repository does not contain a LICENSE.md, let me explain what it means.
 Stringent copyright rules apply on this repository.
 
 This means no data can be stolen or used from this repository. If violated, it may invite legal action.
+
+#### This project is NOT open source
