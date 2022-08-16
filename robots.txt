@@ -1,0 +1,2 @@
+User-agent: Googlebot-Image
+Disallow: /1st kokil favicon transparent.png
