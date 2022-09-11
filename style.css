@@ -50,7 +50,10 @@ box-shadow: 4px 3px 8px 1px #717171;
     color:#24C6DC;
 }
 
-
+#resume{
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+}
 
 
 main{
@@ -178,12 +181,12 @@ main{
     padding: 1rem 0 1rem 0;
 }
 
-.project_on>p ,.project_done >p{
+.project>p {
     margin: 0;
     font-size: 0.9rem;
 }
 
-.project_on,.project_done{
+.project{
     border-left-style: solid;
     border-left-color: #285fc4;
     padding: 0 0 1rem 0;
@@ -198,7 +201,7 @@ main{
 }
 
 .project_n{
-    font-weight: bold;
+    font-weight: 600;
 }
 
 .super{
